@@ -1,0 +1,8 @@
+name: "My CodeQL config"
+
+# Disable the default queries
+disable-default-queries: true
+
+# Use an adapted version of the queries which considers library entry points as untrusted
+queries:
+  - uses: lcartey/codeql/javascript/ql/src/codeql-suites/javascript-security-extended.qls@cloud-sdk-js
